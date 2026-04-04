@@ -1,6 +1,8 @@
 # 🛡️ Brute-Force Defender & Cryptographic Salting Simulator
-
-🇹🇷 **Türkçe** | 🇬🇧 **English**
+📘 **Ders:** Tersine Mühendislik (Reverse Engineering)  
+🎯 **Görev:** Vize Projesi
+  Hazırlayan:Hilal Şengül
+🇹🇷 **Türkçe** 
 
 ## 📖 Proje Özeti
 Bu proje, modern siber güvenlik mimarilerinde parolaların veritabanında "düz (tuzsuz) hash" olarak tutulmasının yarattığı kritik zafiyetleri ve bu zafiyetlerin "Kriptografik Tuzlama (Salting)" yöntemiyle nasıl proaktif olarak engellendiğini kanıtlayan Python tabanlı bir simülasyon motorudur. 
