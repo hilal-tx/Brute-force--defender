@@ -1,5 +1,4 @@
 # 🛡️ Brute-Force Defender & Cryptographic Salting Simulator
-# 🛡️ Brute-Force Defender & Cryptographic Salting Simulator
 
 📘 **Ders:** Tersine Mühendislik (Reverse Engineering)  
 🎯 **Görev:** Vize Projesi  
