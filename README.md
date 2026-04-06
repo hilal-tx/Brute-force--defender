@@ -4,7 +4,7 @@
 🎯 **Görev:** Vize Projesi  
 👤 **Hazırlayan:** Hilal Şengül  
 
-🇹🇷 **Türkçe** 
+🇹🇷 **Türkçe**
 
 ---
 
