@@ -1,0 +1,40 @@
+name: Python CI and Docker Build Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+        cache: 'pip'
+
+    - name: Check requirements.txt
+      run: |
+        if [ ! -f requirements.txt ]; then
+          echo "Hata: requirements.txt dosyası bulunamadı!"
+          exit 1
+        fi
+        echo "requirements.txt bulundu."
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip check
+
+    - name: Test Docker image build
+      run: |
+        docker build -t brute-force-defender-test:latest .
+        echo "Docker imajı başarıyla build edildi."
